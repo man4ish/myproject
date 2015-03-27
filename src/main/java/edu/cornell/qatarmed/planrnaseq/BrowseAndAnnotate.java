@@ -2734,6 +2734,10 @@ public class BrowseAndAnnotate extends UI {
                                     if (selected_disease_category.length() > 1) {
                                         query_part3 = query_part3 + " AND disease_category like  " + "'%" + selected_disease_category + "%'";
                                     }
+                                    
+                                     if (selected_sequencing_platforms.length() > 1) {
+                                        query_part3 = query_part3 + " AND sequencing_platform like  " + "'%" + selected_sequencing_platforms + "%'";
+                                    }
 
                                     query_part3 = query_part3.trim();
                                     if (query_part3.startsWith("AND")) {
