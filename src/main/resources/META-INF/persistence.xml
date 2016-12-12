@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="1.0" xmlns="http://java.sun.com/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_1_0.xsd">
+  <persistence-unit name="PlanRNAseq_PU" transaction-type="JTA">
+    <jta-data-source>jparna</jta-data-source>
+    <class>edu.cornell.qatarmed.entities.BioprojectSummary</class>
+    <class>edu.cornell.qatarmed.entities.SraRnaseq</class>
+    <exclude-unlisted-classes>false</exclude-unlisted-classes>
+    <properties>
+      <property name="javax.persistence.schema-generation.database.action" value="create"/>
+      <property name="eclipselink.logging.level" value="FINE"/>
+      <property name="eclipselink.flush-clear.cache" value="Drop"/>
+    </properties>
+  </persistence-unit>
+</persistence>

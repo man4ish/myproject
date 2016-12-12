@@ -1,0 +1,21 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Dec 9, 2014, 8:34:06 AM
+    Author     : pak2013
+*/
+
+//@import "addons.scss";
+@import "mytheme.scss";
+
+/* This file prefixes all rules with the theme name to avoid causing conflicts with other themes. */
+/* The actual styles should be defined in mytheme.scss */
+.mytheme {
+//  @include addons;
+
+  // Include mytheme theme styles in your theme
+  @include mytheme;
+}
